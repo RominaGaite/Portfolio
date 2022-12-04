@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   background-color: rgb(252, 9, 110);
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: rgb(252, 9, 110);
+
+}
+
+h1 {
+   font-family: monospace;
+   font-family: 'Special Elite', cursive;
+   color: rgb(248, 247, 248);
+   text-align: center;
+   align-content: center;
+   position: relative;
+   color: #333333;
+   font-size: 5rem;
+
+   background: -webkit-linear-gradient(left, #c23636, #192a56, #00d2d3, yellow, #6d2a4f, #2e86de, #4cd137, #e84118);
+   -webkit-background-clip: text;
+   color: transparent;
+   -webkit-clip-path: circle(100px at 0% 50%);
+   animation: light linear 4s infinite alternate;
+}
+
+
+
+@keyframes light {
+   0% {
+       -webkit-clip-path: circle(100px at 0% 50%);
+   }
+
+   50% {
+       -webkit-clip-path: circle(100px at 50% 50%);
+   }
+
+   100% {
+       -webkit-clip-path: circle(100px at 100% 50%);
+   }
+}
